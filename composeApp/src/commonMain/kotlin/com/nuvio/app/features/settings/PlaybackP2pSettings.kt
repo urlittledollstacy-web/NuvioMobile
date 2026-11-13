@@ -59,6 +59,14 @@ internal fun PlaybackP2pSettings(
                 )
                 SettingsGroupDivider(isTablet = isTablet)
                 SettingsSwitchRow(
+                    title = stringResource(Res.string.settings_p2p_upload_title),
+                    description = stringResource(Res.string.settings_p2p_upload_subtitle),
+                    checked = p2pSettings.enableUpload,
+                    isTablet = isTablet,
+                    onCheckedChange = P2pSettingsRepository::setEnableUpload,
+                )
+                SettingsGroupDivider(isTablet = isTablet)
+                SettingsSwitchRow(
                     title = stringResource(Res.string.settings_p2p_hide_stats_title),
                     description = stringResource(Res.string.settings_p2p_hide_stats_subtitle),
                     checked = p2pSettings.hideTorrentStats,

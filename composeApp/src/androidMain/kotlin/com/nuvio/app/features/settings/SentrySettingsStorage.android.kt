@@ -19,7 +19,7 @@ internal actual object SentrySettingsStorage {
 
     actual fun loadEnabled(): Boolean? =
         preferences?.let { prefs ->
-            if (prefs.contains(enabledKey)) prefs.getBoolean(enabledKey, true) else null
+            if (prefs.contains(enabledKey)) prefs.getBoolean(enabledKey, false) else null
         }
 
     actual fun saveEnabled(enabled: Boolean) {

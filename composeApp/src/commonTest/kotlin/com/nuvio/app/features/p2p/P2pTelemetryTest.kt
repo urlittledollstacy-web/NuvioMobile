@@ -12,6 +12,16 @@ class P2pTelemetryTest {
     }
 
     @Test
+    fun uploadIsDisabledByDefault() {
+        assertFalse(P2pSettingsUiState().enableUpload)
+    }
+
+    @Test
+    fun p2pIsDisabledByDefault() {
+        assertFalse(P2pSettingsUiState().p2pEnabled)
+    }
+
+    @Test
     fun connectingStateCarriesStartupTelemetry() {
         val state = P2pStreamingState.Connecting(
             phase = "add_magnet",

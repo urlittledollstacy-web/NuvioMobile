@@ -561,7 +561,7 @@
     <string name="settings_advanced_remember_last_profile">Remember Last Profile</string>
     <string name="settings_advanced_remember_last_profile_description">Remember last selected profile at startup</string>
     <string name="settings_advanced_sentry_reports">Sentry Crash Reports</string>
-    <string name="settings_advanced_sentry_reports_subtitle">Send crash and ANR reports with safe context. On by default.</string>
+    <string name="settings_advanced_sentry_reports_subtitle">Send crash and ANR reports with safe context. Off by default.</string>
     <string name="sentry_enable_dialog_title">Turn on crash reports?</string>
     <string name="sentry_enable_dialog_subtitle">Crash reports help identify device-specific failures without asking you to reproduce the issue with ADB logs.</string>
     <string name="sentry_disable_dialog_title">Turn off crash reports?</string>
@@ -2374,6 +2374,8 @@
     <string name="settings_p2p_title">P2P Streaming</string>
     <string name="settings_playback_section_p2p">P2P STREAMING</string>
     <string name="settings_p2p_subtitle">Allow peer-to-peer (torrent) streams</string>
+    <string name="settings_p2p_upload_title">Upload to peers</string>
+    <string name="settings_p2p_upload_subtitle">Share downloaded pieces with other peers. Off by default; enabling it uploads torrent data from your device.</string>
     <string name="settings_p2p_hide_stats_title">Hide torrent stats</string>
     <string name="settings_p2p_hide_stats_subtitle">Hide buffer, seeds, peers and download speed during loading and playback</string>
     <string name="settings_p2p_profile_title">Torrent profile</string>
